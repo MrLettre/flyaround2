@@ -17,6 +17,11 @@ class PlaneModel
      */
     private $planes;
 
+    public function __toString()
+    {
+        return $this->model. " - " . $this->isAvailable;
+    }
+
     /**
      * @var int
      *
